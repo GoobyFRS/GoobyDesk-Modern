@@ -319,3 +319,15 @@ class ServerConfig:
 config = ServerConfig(database=DatabaseConfig(pool=PoolConfig(size=10)))
 print(config.database.pool.size)  # Clear, type-checked access
 ```
+
+### Security Requirements
+
+- Never hardcode secrets
+- Use environment variables for configuration
+- Validate all user input
+- Escape or sanitize rendered content
+- Prefer parameterized database queries
+- Avoid shell=True in subprocess calls
+- Use least-privilege principles
+- Authentication and authorization checks must be explicit
+- Log security-relevant events
