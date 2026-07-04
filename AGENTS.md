@@ -11,7 +11,7 @@ Always prefer:
 
 Never introduce unnecessary frameworks.
 
-Avoid global state.
+Avoid global states.
 
 Favor composition over inheritance.
 
@@ -29,6 +29,7 @@ When unsure, ask instead of inventing behavior.
 
 ## Language Preference
 - **Primary language**: Python 3
+- **Secondary language**: vanilla JavaScript
 - **Compliance**: PEP8 compliant
 
 ### Imports
