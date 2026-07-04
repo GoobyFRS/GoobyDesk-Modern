@@ -331,3 +331,10 @@ print(config.database.pool.size)  # Clear, type-checked access
 - Use least-privilege principles
 - Authentication and authorization checks must be explicit
 - Log security-relevant events
+
+### Logging
+
+- Use structured logging where practical
+- Never log secrets or credentials
+- Include contextual identifiers in logs
+- Prefer informative warnings/errors over generic messages
