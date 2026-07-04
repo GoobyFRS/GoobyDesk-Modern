@@ -23,7 +23,9 @@ Never add dependencies unless requested.
 
 Write production-quality code.
 
-Prefer async patterns where appropriate.
+Use async only when it materially improves concurrency,
+responsiveness, or I/O scalability.
+Avoid unnecessary async complexity.
 
 When unsure, ask instead of inventing behavior.
 
