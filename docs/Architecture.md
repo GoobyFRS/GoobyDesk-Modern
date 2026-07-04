@@ -1,17 +1,17 @@
-Frontend
+# Architecture - GoobyDesk_Modern
 
-Backend
+## Frontend
 
-Authentication
+## Backend
 
-API
+## Authentication
 
-Storage
+## API
 
-Modules
+## Storage
 
-Plugin System
+## Modules
 
-Configuration
+## Configuration
 
-Logging
+## Logging

@@ -1,8 +1,8 @@
 v0.1
 
-✔ Login
-✔ Dashboard
-✔ Assets
+- Login
+- Dashboard
+- Assets
 
 v0.2
 
