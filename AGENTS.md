@@ -142,7 +142,8 @@ def traverse(node, depth: int = 0):
 
 ### 2. Fixed Loop Bounds
 
-- All loops must have a **deterministic, verifiable upper bound**
+- All loops must have a **deterministic, verifiable upper bound** unless the loop is part of a long-running service worker
+with explicit cancellation or timeout handling.
 - Avoid `while True` without clear, guaranteed exit conditions
 - Use `for` loops with explicit ranges when possible
 
