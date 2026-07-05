@@ -1,6 +1,17 @@
 # AI Instructions
 
-You are assisting with GoobyDesk_Modern.
+You are assisting with GoobyDesk_Modern. An Open-Source, Cloud Native, Lightweight, Databaseless, Self-Hosted ITSM Service Desk.
+
+
+**Entry Point:** `app.py`
+
+**Setup:** 
+
+```shell
+source venv/bin/activate
+pip install -r requirements.txt
+python3 flask run
+```
 
 Always prefer:
 
@@ -9,25 +20,17 @@ Always prefer:
 - security
 - readability
 
-Never introduce unnecessary frameworks.
+Never introduce unnecessary frameworks. Never add dependencies unless requested. When unsure, ask instead of inventing behavior.
 
 Avoid global states.
 
 Favor composition over inheritance.
 
-Keep functions small.
-
 Document public APIs.
-
-Never add dependencies unless requested.
 
 Write production-quality code.
 
-Use async only when it materially improves concurrency,
-responsiveness, or I/O scalability.
-Avoid unnecessary async complexity.
-
-When unsure, ask instead of inventing behavior.
+Use async only when it materially improves concurrency, responsiveness, or I/O scalability. Avoid unnecessary async complexity.
 
 ## Language Preference
 - **Primary language**: Python 3
@@ -59,11 +62,6 @@ When unsure, ask instead of inventing behavior.
 - Keep functions under ~50 lines when practical
 - Use descriptive names that indicate purpose
 - Prefer pure functions where possible
-
-### Line Length
-
-- Maximum **88 characters** (black formatter default)
-- Break long lines at logical points
 
 ### Type Hints
 
@@ -158,7 +156,7 @@ while True:
     process(data)
 
 # Good - explicit bounds
-MAX_ITERATIONS = 10_000
+MAX_ITERATIONS = 512
 
 for _ in range(MAX_ITERATIONS):
     data = fetch_next()
