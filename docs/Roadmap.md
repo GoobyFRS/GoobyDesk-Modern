@@ -1,22 +1,36 @@
 v0.1
 
-- Login
-- Dashboard
-- Assets
+- Basic GUI
+- Configuration Module
 
-v0.2
+v0.2 
 
-✔ Customer module
-✔ Ticketing
+- API Module (Webhooks)
 
 v0.3
 
-✔ HR
+- ITSM Module
 
 v0.4
 
-✔ Reporting
+- HR Module
 
-v1.0
+v0.5 
 
-Stable release
+- CRM Module
+
+v0.6
+
+- Services Module
+
+v0.7
+
+- Change Module
+
+v0.8
+
+- Reports Module
+
+v0.9
+
+- Finalize GUI
