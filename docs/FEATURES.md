@@ -15,8 +15,8 @@
 Home Page/index.html should contain....
 
 - Basic navigation bar
-    - Link to Login
-    - Link to Sign-Up
+  - Link to Login
+  - Link to Sign-Up
 - Ticket submission
 
 ### Basic ITSM Ticket management (ITSM)
@@ -141,6 +141,7 @@ New tickets should be assigned to the support queue with assigned_technician as 
 
 /crm/ should auto-direct towards /crm/dashboard
 /crm/dashboard should display....
+
 - Basic Nav Bar
 - Create New Customer button
 - Export as CSV button

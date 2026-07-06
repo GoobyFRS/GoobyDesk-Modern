@@ -2,10 +2,9 @@
 
 You are assisting with GoobyDesk_Modern. An Open-Source, Cloud Native, Lightweight, Databaseless, Self-Hosted ITSM Service Desk.
 
-
 **Entry Point:** `app.py`
 
-**Setup:** 
+**Setup:**
 
 ```shell
 source venv/bin/activate
@@ -33,6 +32,7 @@ Write production-quality code.
 Use async only when it materially improves concurrency, responsiveness, or I/O scalability. Avoid unnecessary async complexity.
 
 ## Language Preference
+
 - **Primary language**: Python 3
 - **Secondary language**: vanilla JavaScript
 - **Compliance**: PEP8 compliant
@@ -48,7 +48,7 @@ Use async only when it materially improves concurrency, responsiveness, or I/O s
 ### Naming Conventions
 
 | Type | Convention | Example |
-|------|------------|---------|
+| --- | --- | --- |
 | Variables | `snake_case` | `user_count`, `total_items` |
 | Constants | `UPPERCASE` | `MAX_RETRIES`, `API_BASE_URL` |
 | Functions | `snake_case` | `get_user_data()`, `calculate_total()` |
@@ -56,6 +56,25 @@ Use async only when it materially improves concurrency, responsiveness, or I/O s
 | Private/Internal | `_leading_underscore` | `_internal_helper()`, `_cache` |
 | Ignored variables | `_` prefix | `for _ in range(10)`, `x, _ = get_pair()` |
 | Module constants | `SCREAMING_SNAKE_CASE` | `DEFAULT_TIMEOUT = 30` |
+
+### Security Requirements
+
+- Never hardcode secrets
+- Use environment variables for configuration
+- Validate all user input
+- Escape or sanitize rendered content
+- Prefer parameterized database queries
+- Avoid shell=True in subprocess calls
+- Use least-privilege principles
+- Authentication and authorization checks must be explicit
+- Log security-relevant events
+
+### Logging
+
+- Use structured logging where practical
+- Never log secrets or credentials
+- Include contextual identifiers in logs
+- Prefer informative warnings/errors over generic messages
 
 ### Function Guidelines
 
@@ -68,6 +87,7 @@ Use async only when it materially improves concurrency, responsiveness, or I/O s
 Type Hints should be used as often as reasonably possible but also remain human readable.
 
 ### Nesting
+
 - **Maximum nesting depth**: 4 levels
 - Use early returns, guard clauses, and extraction to reduce nesting
 - Prefer flat over nested
@@ -317,22 +337,3 @@ class ServerConfig:
 config = ServerConfig(database=DatabaseConfig(pool=PoolConfig(size=10)))
 print(config.database.pool.size)  # Clear, type-checked access
 ```
-
-### Security Requirements
-
-- Never hardcode secrets
-- Use environment variables for configuration
-- Validate all user input
-- Escape or sanitize rendered content
-- Prefer parameterized database queries
-- Avoid shell=True in subprocess calls
-- Use least-privilege principles
-- Authentication and authorization checks must be explicit
-- Log security-relevant events
-
-### Logging
-
-- Use structured logging where practical
-- Never log secrets or credentials
-- Include contextual identifiers in logs
-- Prefer informative warnings/errors over generic messages

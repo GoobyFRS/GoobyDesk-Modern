@@ -1,7 +1,14 @@
-authentication
-password hashing
-CSRF
-XSS
-rate limiting
-encryption
-secrets
+## Authentication
+
+## Password Hashing
+
+## CSRF
+
+## XSS
+
+## Rate Limiting
+
+## Encryption
+
+## Secrets Handling
+

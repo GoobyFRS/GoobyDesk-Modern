@@ -60,10 +60,10 @@ webhooks:
         enabled: false
         api_key: ""  # X-API-Key header for authentication
       tailscale:
-        enabled: true
+        enabled: false
         secret: ""  # Webhook secret for signature verification
       uptime_kuma:
-        enabled: true
+        enabled: false
         token: ""  # Bearer token for authentication
         create_ticket_on_up: false  # Only create tickets for DOWN events by default
   egress:
@@ -75,6 +75,8 @@ webhooks:
     slack:
       enabled: false
       webhook_url: ""
+      username: "Service Desk"
+      avatar_url: ""
     teams365:
       enabled: false
       webhook_url: ""
@@ -87,18 +89,18 @@ tickets:
     - support
     - escalation
     - billing
-  statuses:
+  tk_status:
     - new
     - in_progress
     - on_hold
     - resolved
     - cancelled
-  impacts:
+  tk_impacts:
     - low
     - medium
     - high
     - critical
-  urgencies:
+  tk_urgency:
     - low
     - medium
     - high
@@ -111,21 +113,25 @@ tickets:
 employees:
   access_roles:
     - none
-    - technician
+    - support_technician
+    - hr_person
+    - manager
     - admin
   assignment_queues:
     - support
     - escalation
     - billing
-  default_role: "technician"
+  default_role: "none"
   default_queue: "support"
 
 customers:
   statuses:
     - active
-    - suspended
     - closed
+    - suspended
+    - terminated
   fraud_risk_levels:
+    - none
     - low
     - medium
     - high
@@ -135,20 +141,21 @@ customers:
 services:
   statuses:
     - active
+    - provisioning
+    - inactive
     - suspended
     - terminated
-    - provisioning
   default_status: "provisioning"
 
 changes:
-  statuses:
+  chg_status:
     - Draft
     - Pending
     - Approved
     - Completed
     - Rollback
     - Cancelled
-  risks:
+  chg_risk:
     - None
     - Low
     - Medium

@@ -1,36 +1,47 @@
-v0.1
+# Project Roadmap and Version Milestones
 
-- Basic GUI
+## v0.1
+
+- Basic GUI and Theme
 - Configuration Module
+- Logging
+- Decorators
 
-v0.2 
+## v0.2
 
 - API Module (Webhooks)
+- Branding Integration into Theme/GUI
+- Role Based User Access
 
-v0.3
+## v0.3
 
 - ITSM Module
 
-v0.4
+## v0.4
 
 - HR Module
-
-v0.5 
-
 - CRM Module
 
-v0.6
+## v0.5
 
 - Services Module
-
-v0.7
-
 - Change Module
 
-v0.8
+## v0.6
 
 - Reports Module
 
-v0.9
+## v0.7
 
 - Finalize GUI
+- Security Patching
+
+## v0.8
+
+- TBD
+
+## v0.9
+
+- TBD
+
+## v1.0 - Stable Release
