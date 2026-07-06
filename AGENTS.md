@@ -10,7 +10,7 @@ You are assisting with GoobyDesk_Modern. An Open-Source, Cloud Native, Lightweig
 ```shell
 source venv/bin/activate
 pip install -r requirements.txt
-python3 flask run
+python3 flask run --debug
 ```
 
 Always prefer:
